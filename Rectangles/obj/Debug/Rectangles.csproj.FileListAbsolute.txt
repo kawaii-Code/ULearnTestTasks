@@ -1,0 +1,10 @@
+C:\Users\Kanya\Downloads\Rectangles.csproj (1)\bin\Debug\Rectangles.exe.config
+C:\Users\Kanya\Downloads\Rectangles.csproj (1)\bin\Debug\Rectangles.exe
+C:\Users\Kanya\Downloads\Rectangles.csproj (1)\bin\Debug\Rectangles.pdb
+C:\Users\Kanya\Downloads\Rectangles.csproj (1)\bin\Debug\TestingRoom.dll
+C:\Users\Kanya\Downloads\Rectangles.csproj (1)\obj\Debug\Rectangles.csproj.AssemblyReference.cache
+C:\Users\Kanya\Downloads\Rectangles.csproj (1)\obj\Debug\Rectangles.csproj.SuggestedBindingRedirects.cache
+C:\Users\Kanya\Downloads\Rectangles.csproj (1)\obj\Debug\Rectangles.csproj.CoreCompileInputs.cache
+C:\Users\Kanya\Downloads\Rectangles.csproj (1)\obj\Debug\Rectangles.csproj.CopyComplete
+C:\Users\Kanya\Downloads\Rectangles.csproj (1)\obj\Debug\Rectangles.exe
+C:\Users\Kanya\Downloads\Rectangles.csproj (1)\obj\Debug\Rectangles.pdb
