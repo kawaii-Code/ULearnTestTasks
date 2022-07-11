@@ -8,3 +8,13 @@ C:\Users\Kanya\Downloads\Rectangles.csproj (1)\obj\Debug\Rectangles.csproj.CoreC
 C:\Users\Kanya\Downloads\Rectangles.csproj (1)\obj\Debug\Rectangles.csproj.CopyComplete
 C:\Users\Kanya\Downloads\Rectangles.csproj (1)\obj\Debug\Rectangles.exe
 C:\Users\Kanya\Downloads\Rectangles.csproj (1)\obj\Debug\Rectangles.pdb
+D:\_PROGRAMMING\_Studying\_ULearn_Tasks\Rectangles\bin\Debug\Rectangles.exe.config
+D:\_PROGRAMMING\_Studying\_ULearn_Tasks\Rectangles\bin\Debug\Rectangles.exe
+D:\_PROGRAMMING\_Studying\_ULearn_Tasks\Rectangles\bin\Debug\Rectangles.pdb
+D:\_PROGRAMMING\_Studying\_ULearn_Tasks\Rectangles\bin\Debug\TestingRoom.dll
+D:\_PROGRAMMING\_Studying\_ULearn_Tasks\Rectangles\obj\Debug\Rectangles.csproj.AssemblyReference.cache
+D:\_PROGRAMMING\_Studying\_ULearn_Tasks\Rectangles\obj\Debug\Rectangles.csproj.SuggestedBindingRedirects.cache
+D:\_PROGRAMMING\_Studying\_ULearn_Tasks\Rectangles\obj\Debug\Rectangles.csproj.CoreCompileInputs.cache
+D:\_PROGRAMMING\_Studying\_ULearn_Tasks\Rectangles\obj\Debug\Rectangles.csproj.CopyComplete
+D:\_PROGRAMMING\_Studying\_ULearn_Tasks\Rectangles\obj\Debug\Rectangles.exe
+D:\_PROGRAMMING\_Studying\_ULearn_Tasks\Rectangles\obj\Debug\Rectangles.pdb
