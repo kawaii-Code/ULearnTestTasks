@@ -56,24 +56,22 @@ namespace TableParser
     public class FieldsParserTask
     {
         private static readonly char[] quotes = new[] { '\'', '"' }; 
+
         public static List<Token> ParseLine(string line)
         {
             List<Token> result = new List<Token>();
 
             for(int i = NotSpaceIndex(line, 0) ; i < line.Length ; i = NotSpaceIndex(line, i))
             {
-                if (quotes.Contains(line[i]))
-                {
-                    Token quotedField = ReadQuotedField(line, i);
-                    i += quotedField.Length;
-                    result.Add(quotedField);
-                }
-                else
-                {
-                    Token field = ReadField(line, i);
-                    i += field.Length;
-                    result.Add(field);
-                }
+                Token currentField;
+
+                if (quotes.Contains(line[i]))                
+                    currentField = ReadQuotedField(line, i);                
+                else                
+                    currentField = ReadField(line, i);                   
+                
+                i += currentField.Length;
+                result.Add(currentField);
             }
 
             return result;
@@ -81,21 +79,26 @@ namespace TableParser
         
         private static int NotSpaceIndex(string line, int currentIndex)
         {
-            int result = currentIndex;
-            while (result < line.Length && line[result] == ' ')
-                result++;
-            return result;
+            while (currentIndex < line.Length && line[currentIndex] == ' ')
+                currentIndex++;
+            return currentIndex;
         }
 
         private static Token ReadField(string line, int startIndex)
         {
             StringBuilder builder = new StringBuilder();
             int currentIndex = startIndex;
-            while (currentIndex < line.Length && line[ currentIndex ] != ' ' &&
-                  !quotes.Contains(line[ currentIndex ]))
-                builder.Append(line[ currentIndex++ ]);
 
+            while (IsPartOfAFieldAt(line, currentIndex))
+                builder.Append(line[ currentIndex++ ]);
             return new Token(builder.ToString(), startIndex, currentIndex - startIndex);
+        }
+
+        private static bool IsPartOfAFieldAt(string line, int currentIndex)
+        {
+            return currentIndex < line.Length 
+                && line[ currentIndex ] != ' ' 
+                && !quotes.Contains(line[ currentIndex ]);
         }
 
         public static Token ReadQuotedField(string line, int startIndex)

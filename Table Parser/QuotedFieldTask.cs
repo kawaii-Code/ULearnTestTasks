@@ -7,15 +7,16 @@ namespace TableParser
     [TestFixture]
     public class QuotedFieldTaskTests
     {
-
-        
+        [TestCase("'a", 0, "a", 2)]
+        [TestCase("'a b'", 0, "a b", 5)]
+        [TestCase(@"'\\'", 0, @"\", 4)]
+        [TestCase(@"'\''", 0, @"'", 4)]
+        [TestCase(@"b ""a""", 2, "a", 3)]        
         public void Test(string line, int startIndex, string expectedValue, int expectedLength)
         {
             var actualToken = QuotedFieldTask.ReadQuotedField(line, startIndex);
             Assert.AreEqual(new Token(expectedValue, startIndex, expectedLength), actualToken);
         }
-
-        // Добавьте свои тесты
     }
 
     class QuotedFieldTask
@@ -23,7 +24,6 @@ namespace TableParser
         public static Token ReadQuotedField(string line, int startIndex)
         {
             StringBuilder builder = new StringBuilder();
-
             char quote = line[ startIndex ];
 
             int currentIndex = startIndex;
